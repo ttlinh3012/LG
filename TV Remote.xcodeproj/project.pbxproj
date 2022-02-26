@@ -1,0 +1,1730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0067577B4206E8C60EAF60D8 /* libPods-TV Remote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740854E85364BD935FD1E468 /* libPods-TV Remote.a */; };
+		04A1AF0F269446740031B3AE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1AF0E269446740031B3AE /* StoreKit.framework */; };
+		04C56DA226B186FA006CE1C9 /* ZeroConfDiscoveryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CB526B186F9006CE1C9 /* ZeroConfDiscoveryProvider.m */; };
+		04C56DA326B186FA006CE1C9 /* SSDPDiscoveryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CB626B186F9006CE1C9 /* SSDPDiscoveryProvider.m */; };
+		04C56DA426B186FA006CE1C9 /* DiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CB826B186F9006CE1C9 /* DiscoveryManager.m */; };
+		04C56DA526B186FA006CE1C9 /* DiscoveryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CBA26B186F9006CE1C9 /* DiscoveryProvider.m */; };
+		04C56DA626B186FA006CE1C9 /* CapabilityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CBC26B186F9006CE1C9 /* CapabilityFilter.m */; };
+		04C56DA726B186FA006CE1C9 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CC426B186F9006CE1C9 /* GCDWebServerResponse.m */; };
+		04C56DA826B186FA006CE1C9 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CC726B186F9006CE1C9 /* GCDWebServerRequest.m */; };
+		04C56DA926B186FA006CE1C9 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CCA26B186F9006CE1C9 /* GCDWebServerFunctions.m */; };
+		04C56DAA26B186FA006CE1C9 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CCB26B186F9006CE1C9 /* GCDWebServer.m */; };
+		04C56DAB26B186FA006CE1C9 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CCC26B186F9006CE1C9 /* GCDWebServerConnection.m */; };
+		04C56DAD26B186FA006CE1C9 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CD226B186F9006CE1C9 /* GCDWebServerErrorResponse.m */; };
+		04C56DAE26B186FA006CE1C9 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CD426B186F9006CE1C9 /* GCDWebServerFileResponse.m */; };
+		04C56DAF26B186FA006CE1C9 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CD526B186F9006CE1C9 /* GCDWebServerDataResponse.m */; };
+		04C56DB026B186FA006CE1C9 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CD726B186F9006CE1C9 /* GCDWebServerStreamedResponse.m */; };
+		04C56DB126B186FA006CE1C9 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CDC26B186F9006CE1C9 /* GCDWebServerURLEncodedFormRequest.m */; };
+		04C56DB226B186FA006CE1C9 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CDD26B186F9006CE1C9 /* GCDWebServerMultiPartFormRequest.m */; };
+		04C56DB326B186FA006CE1C9 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CDE26B186F9006CE1C9 /* GCDWebServerDataRequest.m */; };
+		04C56DB426B186FA006CE1C9 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CDF26B186F9006CE1C9 /* GCDWebServerFileRequest.m */; };
+		04C56DB726B186FA006CE1C9 /* LGSRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CE526B186F9006CE1C9 /* LGSRWebSocket.m */; };
+		04C56DB926B186FA006CE1C9 /* CTASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CEA26B186F9006CE1C9 /* CTASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DBA26B186FA006CE1C9 /* CTASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CEC26B186F9006CE1C9 /* CTASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DBB26B186FA006CE1C9 /* CTASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CEE26B186F9006CE1C9 /* CTASIInputStream.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DBC26B186FA006CE1C9 /* CTASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CF026B186F9006CE1C9 /* CTASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DBD26B186FA006CE1C9 /* CTASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CF426B186F9006CE1C9 /* CTASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DBE26B186FA006CE1C9 /* CTASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CF826B186F9006CE1C9 /* CTASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DBF26B186FA006CE1C9 /* CTASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CFB26B186F9006CE1C9 /* CTASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DC026B186FA006CE1C9 /* CTASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CFC26B186F9006CE1C9 /* CTASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DC126B186FA006CE1C9 /* CTReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56CFF26B186F9006CE1C9 /* CTReachability.m */; settings = {COMPILER_FLAGS = "-w -fno-objc-arc"; }; };
+		04C56DC326B186FA006CE1C9 /* CTXMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D0426B186F9006CE1C9 /* CTXMLReader.m */; };
+		04C56DC526B186FA006CE1C9 /* CTGuid.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D0726B186F9006CE1C9 /* CTGuid.m */; };
+		04C56DC626B186FA006CE1C9 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D0A26B186F9006CE1C9 /* XMLWriter.m */; };
+		04C56DC726B186FA006CE1C9 /* TextInputStatusInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1026B186F9006CE1C9 /* TextInputStatusInfo.m */; };
+		04C56DC826B186FA006CE1C9 /* SubtitleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1226B186F9006CE1C9 /* SubtitleInfo.m */; };
+		04C56DC926B186FA006CE1C9 /* MediaLaunchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1426B186F9006CE1C9 /* MediaLaunchObject.m */; };
+		04C56DCA26B186FA006CE1C9 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1626B186F9006CE1C9 /* ImageInfo.m */; };
+		04C56DCB26B186FA006CE1C9 /* SSDPSocketListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1826B186F9006CE1C9 /* SSDPSocketListener.m */; };
+		04C56DCC26B186FA006CE1C9 /* DeviceServiceReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1926B186F9006CE1C9 /* DeviceServiceReachability.m */; };
+		04C56DCD26B186FA006CE1C9 /* NSDictionary+KeyPredicateSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1A26B186F9006CE1C9 /* NSDictionary+KeyPredicateSearch.m */; };
+		04C56DCE26B186FA006CE1C9 /* AppStateChangeNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1B26B186F9006CE1C9 /* AppStateChangeNotifier.m */; };
+		04C56DCF26B186FA006CE1C9 /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D1E26B186F9006CE1C9 /* ChannelInfo.m */; };
+		04C56DD026B186FA006CE1C9 /* SynchronousBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2026B186F9006CE1C9 /* SynchronousBlockRunner.m */; };
+		04C56DD126B186FA006CE1C9 /* DispatchQueueBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2426B186F9006CE1C9 /* DispatchQueueBlockRunner.m */; };
+		04C56DD226B186FA006CE1C9 /* SubscriptionDeduplicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2626B186F9006CE1C9 /* SubscriptionDeduplicator.m */; };
+		04C56DD326B186FA006CE1C9 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2726B186F9006CE1C9 /* NSString+Common.m */; };
+		04C56DD426B186FA006CE1C9 /* ProgramInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2926B186F9006CE1C9 /* ProgramInfo.m */; };
+		04C56DD526B186FA006CE1C9 /* ConnectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2A26B186F9006CE1C9 /* ConnectUtil.m */; };
+		04C56DD626B186FA006CE1C9 /* MediaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2B26B186F9006CE1C9 /* MediaInfo.m */; };
+		04C56DD726B186FA006CE1C9 /* ExternalInputInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D2E26B186F9006CE1C9 /* ExternalInputInfo.m */; };
+		04C56DD826B186FA006CE1C9 /* NSMutableDictionary+NilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D3226B186F9006CE1C9 /* NSMutableDictionary+NilSafe.m */; };
+		04C56DD926B186FA006CE1C9 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D3726B186F9006CE1C9 /* AppInfo.m */; };
+		04C56DDA26B186FA006CE1C9 /* ConnectError.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D3826B186F9006CE1C9 /* ConnectError.m */; };
+		04C56DDB26B186FA006CE1C9 /* CapabilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D4226B186F9006CE1C9 /* CapabilityConstants.m */; };
+		04C56DDC26B186FA006CE1C9 /* ServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5326B186F9006CE1C9 /* ServiceConfig.m */; };
+		04C56DDD26B186FA006CE1C9 /* NetcastTVServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5526B186F9006CE1C9 /* NetcastTVServiceConfig.m */; };
+		04C56DDE26B186FA006CE1C9 /* ServiceDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5626B186F9006CE1C9 /* ServiceDescription.m */; };
+		04C56DDF26B186FA006CE1C9 /* WebOSTVServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5826B186F9006CE1C9 /* WebOSTVServiceConfig.m */; };
+		04C56DE026B186FA006CE1C9 /* AirPlayService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5926B186F9006CE1C9 /* AirPlayService.m */; };
+		04C56DE126B186FA006CE1C9 /* DLNAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5A26B186F9006CE1C9 /* DLNAService.m */; };
+		04C56DE226B186FA006CE1C9 /* RokuService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5D26B186F9006CE1C9 /* RokuService.m */; };
+		04C56DE326B186FA006CE1C9 /* WebOSTVService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5E26B186F9006CE1C9 /* WebOSTVService.m */; };
+		04C56DE426B186FA006CE1C9 /* DeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D5F26B186F9006CE1C9 /* DeviceService.m */; };
+		04C56DE526B186FA006CE1C9 /* WebAppSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D6126B186F9006CE1C9 /* WebAppSession.m */; };
+		04C56DE626B186FA006CE1C9 /* LaunchSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D6226B186F9006CE1C9 /* LaunchSession.m */; };
+		04C56DE726B186FA006CE1C9 /* WebOSWebAppSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D6926B186F9006CE1C9 /* WebOSWebAppSession.m */; };
+		04C56DE826B186FA006CE1C9 /* AirPlayWebAppSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D6A26B186F9006CE1C9 /* AirPlayWebAppSession.m */; };
+		04C56DE926B186FA006CE1C9 /* DIALService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D6B26B186F9006CE1C9 /* DIALService.m */; };
+		04C56DEA26B186FA006CE1C9 /* ServiceSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D6F26B186F9006CE1C9 /* ServiceSubscription.m */; };
+		04C56DEB26B186FA006CE1C9 /* ServiceAsyncCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D7426B186F9006CE1C9 /* ServiceAsyncCommand.m */; };
+		04C56DEC26B186FA006CE1C9 /* ServiceCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D7526B186F9006CE1C9 /* ServiceCommand.m */; };
+		04C56DED26B186FA006CE1C9 /* NetcastTVService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D7626B186F9006CE1C9 /* NetcastTVService.m */; };
+		04C56DEE26B186FA006CE1C9 /* XMLWriter+ConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D7B26B186F9006CE1C9 /* XMLWriter+ConvenienceMethods.m */; };
+		04C56DEF26B186FA006CE1C9 /* WebOSTVServiceMouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D7D26B186F9006CE1C9 /* WebOSTVServiceMouse.m */; };
+		04C56DF026B186FA006CE1C9 /* AirPlayServiceMirrored.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D8026B186F9006CE1C9 /* AirPlayServiceMirrored.m */; };
+		04C56DF126B186FA006CE1C9 /* WebOSTVServiceSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D8126B186F9006CE1C9 /* WebOSTVServiceSocketClient.m */; };
+		04C56DF226B186FA006CE1C9 /* NSObject+FeatureNotSupported_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D8626B186FA006CE1C9 /* NSObject+FeatureNotSupported_Private.m */; };
+		04C56DF326B186FA006CE1C9 /* AirPlayServiceHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D8A26B186FA006CE1C9 /* AirPlayServiceHTTP.m */; };
+		04C56DF426B186FA006CE1C9 /* DLNAHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D8B26B186FA006CE1C9 /* DLNAHTTPServer.m */; };
+		04C56DF526B186FA006CE1C9 /* AirPlayServiceHTTPKeepAlive.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D8C26B186FA006CE1C9 /* AirPlayServiceHTTPKeepAlive.m */; };
+		04C56DF626B186FA006CE1C9 /* DevicePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D9226B186FA006CE1C9 /* DevicePicker.m */; };
+		04C56DF726B186FA006CE1C9 /* ConnectableDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D9326B186FA006CE1C9 /* ConnectableDevice.m */; };
+		04C56DF826B186FA006CE1C9 /* DefaultConnectableDeviceStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D9726B186FA006CE1C9 /* DefaultConnectableDeviceStore.m */; };
+		04C56DF926B186FA006CE1C9 /* ConnectSDK.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C56D9D26B186FA006CE1C9 /* ConnectSDK.release.xcconfig */; };
+		04C56DFA26B186FA006CE1C9 /* ConnectSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C56D9E26B186FA006CE1C9 /* ConnectSDK-dummy.m */; };
+		04C56DFB26B186FA006CE1C9 /* ConnectSDK.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04C56DA026B186FA006CE1C9 /* ConnectSDK.debug.xcconfig */; };
+		04C56DFC26B186FA006CE1C9 /* ConnectSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C56DA126B186FA006CE1C9 /* ConnectSDK-Info.plist */; };
+		04F1B73626B0632600C18858 /* ControlTouchpadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6E726B0632600C18858 /* ControlTouchpadView.m */; };
+		04F1B73726B0632600C18858 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B6E926B0632600C18858 /* Configuration.storekit */; };
+		04F1B73826B0632600C18858 /* Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6ED26B0632600C18858 /* Navigation.m */; };
+		04F1B73926B0632600C18858 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6EE26B0632600C18858 /* NavigationViewController.m */; };
+		04F1B73A26B0632600C18858 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B6EF26B0632600C18858 /* GoogleService-Info.plist */; };
+		04F1B73B26B0632600C18858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B6F026B0632600C18858 /* LaunchScreen.storyboard */; };
+		04F1B73C26B0632600C18858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B6F226B0632600C18858 /* Main.storyboard */; };
+		04F1B73D26B0632600C18858 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6F726B0632600C18858 /* SplashViewController.m */; };
+		04F1B73E26B0632600C18858 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6F926B0632600C18858 /* ViewController.m */; };
+		04F1B73F26B0632600C18858 /* Intro2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6FD26B0632600C18858 /* Intro2ViewController.m */; };
+		04F1B74026B0632600C18858 /* IntroViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6FF26B0632600C18858 /* IntroViewViewController.m */; };
+		04F1B74126B0632600C18858 /* intro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B70026B0632600C18858 /* intro2.mp4 */; };
+		04F1B74226B0632600C18858 /* intro1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B70126B0632600C18858 /* intro1.mp4 */; };
+		04F1B74326B0632600C18858 /* Intro1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B70526B0632600C18858 /* Intro1ViewController.m */; };
+		04F1B74426B0632600C18858 /* SubBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B70726B0632600C18858 /* SubBViewController.m */; };
+		04F1B74526B0632600C18858 /* sub.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B70826B0632600C18858 /* sub.mp4 */; };
+		04F1B74626B0632600C18858 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B70A26B0632600C18858 /* SettingsViewController.m */; };
+		04F1B74726B0632600C18858 /* SubAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B70D26B0632600C18858 /* SubAViewController.m */; };
+		04F1B74826B0632600C18858 /* ChanelsVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B71126B0632600C18858 /* ChanelsVCViewController.m */; };
+		04F1B74926B0632600C18858 /* DetectTVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B71326B0632600C18858 /* DetectTVViewController.m */; };
+		04F1B74A26B0632600C18858 /* BaseSubVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B71726B0632600C18858 /* BaseSubVViewController.m */; };
+		04F1B74B26B0632600C18858 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B71826B0632600C18858 /* main.m */; };
+		04F1B74C26B0632600C18858 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B71A26B0632600C18858 /* Reachability.m */; };
+		04F1B74D26B0632600C18858 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B71C26B0632600C18858 /* AppDelegate.m */; };
+		04F1B74E26B0632600C18858 /* ChanelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B71F26B0632600C18858 /* ChanelsCollectionViewCell.xib */; };
+		04F1B74F26B0632600C18858 /* ChanelsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B72026B0632600C18858 /* ChanelsCollectionViewCell.m */; };
+		04F1B75026B0632600C18858 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B72326B0632600C18858 /* TableViewCell.m */; };
+		04F1B75126B0632600C18858 /* tablecellsubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B72526B0632600C18858 /* tablecellsubview.xib */; };
+		04F1B75226B0632600C18858 /* tabbarsubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B72826B0632600C18858 /* tabbarsubview.xib */; };
+		04F1B75326B0632600C18858 /* TabbarSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B72926B0632600C18858 /* TabbarSubView.m */; };
+		04F1B75426B0632600C18858 /* numboardsubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B72C26B0632600C18858 /* numboardsubView.m */; };
+		04F1B75526B0632600C18858 /* numboardsubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B72D26B0632600C18858 /* numboardsubView.xib */; };
+		04F1B75626B0632600C18858 /* DetectTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B72F26B0632600C18858 /* DetectTVCell.xib */; };
+		04F1B75726B0632600C18858 /* DetectTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B73026B0632600C18858 /* DetectTVCell.m */; };
+		04F1B75926B0632600C18858 /* TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B73426B0632600C18858 /* TabbarController.m */; };
+		04F1B75B26B063C600C18858 /* Assets.xcassets 16-19-01-002.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B75A26B063C600C18858 /* Assets.xcassets 16-19-01-002.xcassets */; };
+		04F1B8B026B063E600C18858 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B8AE26B063E500C18858 /* Podfile.lock */; };
+		04F1B8B126B063E600C18858 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 04F1B8AF26B063E500C18858 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		044B55FA265BA1260074C42E /* TV Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		046A4E3926A7126500459CCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		046A4E3C26A7129E00459CCA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		04A1AF0E269446740031B3AE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		04C56CAD26B186F9006CE1C9 /* ConnectSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectSDK.h; sourceTree = "<group>"; };
+		04C56CAF26B186F9006CE1C9 /* DiscoveryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryProvider.h; sourceTree = "<group>"; };
+		04C56CB126B186F9006CE1C9 /* SSDPDiscoveryProvider_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDPDiscoveryProvider_Private.h; sourceTree = "<group>"; };
+		04C56CB226B186F9006CE1C9 /* ZeroConfDiscoveryProvider_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroConfDiscoveryProvider_Private.h; sourceTree = "<group>"; };
+		04C56CB326B186F9006CE1C9 /* ZeroConfDiscoveryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroConfDiscoveryProvider.h; sourceTree = "<group>"; };
+		04C56CB426B186F9006CE1C9 /* SSDPDiscoveryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDPDiscoveryProvider.h; sourceTree = "<group>"; };
+		04C56CB526B186F9006CE1C9 /* ZeroConfDiscoveryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroConfDiscoveryProvider.m; sourceTree = "<group>"; };
+		04C56CB626B186F9006CE1C9 /* SSDPDiscoveryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDPDiscoveryProvider.m; sourceTree = "<group>"; };
+		04C56CB726B186F9006CE1C9 /* DiscoveryManager_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryManager_Private.h; sourceTree = "<group>"; };
+		04C56CB826B186F9006CE1C9 /* DiscoveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryManager.m; sourceTree = "<group>"; };
+		04C56CB926B186F9006CE1C9 /* CapabilityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapabilityFilter.h; sourceTree = "<group>"; };
+		04C56CBA26B186F9006CE1C9 /* DiscoveryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryProvider.m; sourceTree = "<group>"; };
+		04C56CBB26B186F9006CE1C9 /* DiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryManager.h; sourceTree = "<group>"; };
+		04C56CBC26B186F9006CE1C9 /* CapabilityFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapabilityFilter.m; sourceTree = "<group>"; };
+		04C56CBD26B186F9006CE1C9 /* DiscoveryManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryManagerDelegate.h; sourceTree = "<group>"; };
+		04C56CBE26B186F9006CE1C9 /* DiscoveryProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryProviderDelegate.h; sourceTree = "<group>"; };
+		04C56CC226B186F9006CE1C9 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		04C56CC326B186F9006CE1C9 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		04C56CC426B186F9006CE1C9 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		04C56CC526B186F9006CE1C9 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		04C56CC626B186F9006CE1C9 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		04C56CC726B186F9006CE1C9 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		04C56CC826B186F9006CE1C9 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		04C56CC926B186F9006CE1C9 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		04C56CCA26B186F9006CE1C9 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		04C56CCB26B186F9006CE1C9 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		04C56CCC26B186F9006CE1C9 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		04C56CCD26B186F9006CE1C9 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		04C56CCE26B186F9006CE1C9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		04C56CD026B186F9006CE1C9 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		04C56CD126B186F9006CE1C9 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		04C56CD226B186F9006CE1C9 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		04C56CD326B186F9006CE1C9 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		04C56CD426B186F9006CE1C9 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		04C56CD526B186F9006CE1C9 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		04C56CD626B186F9006CE1C9 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		04C56CD726B186F9006CE1C9 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		04C56CD926B186F9006CE1C9 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		04C56CDA26B186F9006CE1C9 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		04C56CDB26B186F9006CE1C9 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		04C56CDC26B186F9006CE1C9 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		04C56CDD26B186F9006CE1C9 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		04C56CDE26B186F9006CE1C9 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		04C56CDF26B186F9006CE1C9 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		04C56CE026B186F9006CE1C9 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		04C56CE126B186F9006CE1C9 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		04C56CE326B186F9006CE1C9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		04C56CE426B186F9006CE1C9 /* LGSRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSRWebSocket.h; sourceTree = "<group>"; };
+		04C56CE526B186F9006CE1C9 /* LGSRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSRWebSocket.m; sourceTree = "<group>"; };
+		04C56CE726B186F9006CE1C9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		04C56CE926B186F9006CE1C9 /* CTASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIProgressDelegate.h; sourceTree = "<group>"; };
+		04C56CEA26B186F9006CE1C9 /* CTASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASIDownloadCache.m; sourceTree = "<group>"; };
+		04C56CEB26B186F9006CE1C9 /* CTASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		04C56CEC26B186F9006CE1C9 /* CTASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASIHTTPRequest.m; sourceTree = "<group>"; };
+		04C56CED26B186F9006CE1C9 /* CTASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		04C56CEE26B186F9006CE1C9 /* CTASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASIInputStream.m; sourceTree = "<group>"; };
+		04C56CEF26B186F9006CE1C9 /* CTASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		04C56CF026B186F9006CE1C9 /* CTASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASIDataCompressor.m; sourceTree = "<group>"; };
+		04C56CF126B186F9006CE1C9 /* CTASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASINetworkQueue.h; sourceTree = "<group>"; };
+		04C56CF226B186F9006CE1C9 /* CTASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASICacheDelegate.h; sourceTree = "<group>"; };
+		04C56CF326B186F9006CE1C9 /* CTASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIDataDecompressor.h; sourceTree = "<group>"; };
+		04C56CF426B186F9006CE1C9 /* CTASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASIFormDataRequest.m; sourceTree = "<group>"; };
+		04C56CF526B186F9006CE1C9 /* CTASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIDownloadCache.h; sourceTree = "<group>"; };
+		04C56CF626B186F9006CE1C9 /* CTASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIHTTPRequest.h; sourceTree = "<group>"; };
+		04C56CF726B186F9006CE1C9 /* CTASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIDataCompressor.h; sourceTree = "<group>"; };
+		04C56CF826B186F9006CE1C9 /* CTASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		04C56CF926B186F9006CE1C9 /* CTASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIInputStream.h; sourceTree = "<group>"; };
+		04C56CFA26B186F9006CE1C9 /* CTASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTASIFormDataRequest.h; sourceTree = "<group>"; };
+		04C56CFB26B186F9006CE1C9 /* CTASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASIDataDecompressor.m; sourceTree = "<group>"; };
+		04C56CFC26B186F9006CE1C9 /* CTASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTASINetworkQueue.m; sourceTree = "<group>"; };
+		04C56CFF26B186F9006CE1C9 /* CTReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTReachability.m; sourceTree = "<group>"; };
+		04C56D0026B186F9006CE1C9 /* CTReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTReachability.h; sourceTree = "<group>"; };
+		04C56D0226B186F9006CE1C9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		04C56D0326B186F9006CE1C9 /* CTXMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTXMLReader.h; sourceTree = "<group>"; };
+		04C56D0426B186F9006CE1C9 /* CTXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTXMLReader.m; sourceTree = "<group>"; };
+		04C56D0626B186F9006CE1C9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		04C56D0726B186F9006CE1C9 /* CTGuid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGuid.m; sourceTree = "<group>"; };
+		04C56D0826B186F9006CE1C9 /* CTGuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGuid.h; sourceTree = "<group>"; };
+		04C56D0A26B186F9006CE1C9 /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriter.m; sourceTree = "<group>"; };
+		04C56D0B26B186F9006CE1C9 /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLWriter.h; sourceTree = "<group>"; };
+		04C56D0D26B186F9006CE1C9 /* ConnectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectUtil.h; sourceTree = "<group>"; };
+		04C56D0E26B186F9006CE1C9 /* ProgramInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramInfo.h; sourceTree = "<group>"; };
+		04C56D0F26B186F9006CE1C9 /* JSONObjectCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONObjectCoding.h; sourceTree = "<group>"; };
+		04C56D1026B186F9006CE1C9 /* TextInputStatusInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputStatusInfo.m; sourceTree = "<group>"; };
+		04C56D1126B186F9006CE1C9 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		04C56D1226B186F9006CE1C9 /* SubtitleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtitleInfo.m; sourceTree = "<group>"; };
+		04C56D1326B186F9006CE1C9 /* ExternalInputInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalInputInfo.h; sourceTree = "<group>"; };
+		04C56D1426B186F9006CE1C9 /* MediaLaunchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaLaunchObject.m; sourceTree = "<group>"; };
+		04C56D1526B186F9006CE1C9 /* MediaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfo.h; sourceTree = "<group>"; };
+		04C56D1626B186F9006CE1C9 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
+		04C56D1726B186F9006CE1C9 /* NSMutableDictionary+NilSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+NilSafe.h"; sourceTree = "<group>"; };
+		04C56D1826B186F9006CE1C9 /* SSDPSocketListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDPSocketListener.m; sourceTree = "<group>"; };
+		04C56D1926B186F9006CE1C9 /* DeviceServiceReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceServiceReachability.m; sourceTree = "<group>"; };
+		04C56D1A26B186F9006CE1C9 /* NSDictionary+KeyPredicateSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KeyPredicateSearch.m"; sourceTree = "<group>"; };
+		04C56D1B26B186F9006CE1C9 /* AppStateChangeNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStateChangeNotifier.m; sourceTree = "<group>"; };
+		04C56D1C26B186F9006CE1C9 /* ConnectError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectError.h; sourceTree = "<group>"; };
+		04C56D1D26B186F9006CE1C9 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		04C56D1E26B186F9006CE1C9 /* ChannelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelInfo.m; sourceTree = "<group>"; };
+		04C56D2026B186F9006CE1C9 /* SynchronousBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronousBlockRunner.m; sourceTree = "<group>"; };
+		04C56D2126B186F9006CE1C9 /* DispatchQueueBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueBlockRunner.h; sourceTree = "<group>"; };
+		04C56D2226B186F9006CE1C9 /* BlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockRunner.h; sourceTree = "<group>"; };
+		04C56D2326B186F9006CE1C9 /* SynchronousBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronousBlockRunner.h; sourceTree = "<group>"; };
+		04C56D2426B186F9006CE1C9 /* DispatchQueueBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueBlockRunner.m; sourceTree = "<group>"; };
+		04C56D2526B186F9006CE1C9 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		04C56D2626B186F9006CE1C9 /* SubscriptionDeduplicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionDeduplicator.m; sourceTree = "<group>"; };
+		04C56D2726B186F9006CE1C9 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		04C56D2826B186F9006CE1C9 /* TextInputStatusInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputStatusInfo.h; sourceTree = "<group>"; };
+		04C56D2926B186F9006CE1C9 /* ProgramInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramInfo.m; sourceTree = "<group>"; };
+		04C56D2A26B186F9006CE1C9 /* ConnectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectUtil.m; sourceTree = "<group>"; };
+		04C56D2B26B186F9006CE1C9 /* MediaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaInfo.m; sourceTree = "<group>"; };
+		04C56D2C26B186F9006CE1C9 /* MediaLaunchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaLaunchObject.h; sourceTree = "<group>"; };
+		04C56D2D26B186F9006CE1C9 /* SubtitleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtitleInfo.h; sourceTree = "<group>"; };
+		04C56D2E26B186F9006CE1C9 /* ExternalInputInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalInputInfo.m; sourceTree = "<group>"; };
+		04C56D2F26B186F9006CE1C9 /* AppStateChangeNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStateChangeNotifier.h; sourceTree = "<group>"; };
+		04C56D3026B186F9006CE1C9 /* NSDictionary+KeyPredicateSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KeyPredicateSearch.h"; sourceTree = "<group>"; };
+		04C56D3126B186F9006CE1C9 /* SSDPSocketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDPSocketListener.h; sourceTree = "<group>"; };
+		04C56D3226B186F9006CE1C9 /* NSMutableDictionary+NilSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+NilSafe.m"; sourceTree = "<group>"; };
+		04C56D3326B186F9006CE1C9 /* DeviceServiceReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceServiceReachability.h; sourceTree = "<group>"; };
+		04C56D3426B186F9006CE1C9 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
+		04C56D3526B186F9006CE1C9 /* SubscriptionDeduplicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionDeduplicator.h; sourceTree = "<group>"; };
+		04C56D3626B186F9006CE1C9 /* ChannelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelInfo.h; sourceTree = "<group>"; };
+		04C56D3726B186F9006CE1C9 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		04C56D3826B186F9006CE1C9 /* ConnectError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectError.m; sourceTree = "<group>"; };
+		04C56D3A26B186F9006CE1C9 /* WebOSTVService_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSTVService_Private.h; sourceTree = "<group>"; };
+		04C56D3B26B186F9006CE1C9 /* DIALService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALService.h; sourceTree = "<group>"; };
+		04C56D3C26B186F9006CE1C9 /* DeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceService.h; sourceTree = "<group>"; };
+		04C56D3D26B186F9006CE1C9 /* WebOSTVService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSTVService.h; sourceTree = "<group>"; };
+		04C56D3E26B186F9006CE1C9 /* NetcastTVService_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetcastTVService_Private.h; sourceTree = "<group>"; };
+		04C56D4026B186F9006CE1C9 /* MediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlayer.h; sourceTree = "<group>"; };
+		04C56D4126B186F9006CE1C9 /* PowerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerControl.h; sourceTree = "<group>"; };
+		04C56D4226B186F9006CE1C9 /* CapabilityConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapabilityConstants.m; sourceTree = "<group>"; };
+		04C56D4326B186F9006CE1C9 /* Capability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Capability.h; sourceTree = "<group>"; };
+		04C56D4426B186F9006CE1C9 /* Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Launcher.h; sourceTree = "<group>"; };
+		04C56D4526B186F9006CE1C9 /* ToastControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastControl.h; sourceTree = "<group>"; };
+		04C56D4626B186F9006CE1C9 /* KeyControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyControl.h; sourceTree = "<group>"; };
+		04C56D4726B186F9006CE1C9 /* MediaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaControl.h; sourceTree = "<group>"; };
+		04C56D4826B186F9006CE1C9 /* PlayListControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayListControl.h; sourceTree = "<group>"; };
+		04C56D4926B186F9006CE1C9 /* TextInputControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputControl.h; sourceTree = "<group>"; };
+		04C56D4A26B186F9006CE1C9 /* VolumeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeControl.h; sourceTree = "<group>"; };
+		04C56D4B26B186F9006CE1C9 /* MouseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseControl.h; sourceTree = "<group>"; };
+		04C56D4C26B186F9006CE1C9 /* WebAppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppLauncher.h; sourceTree = "<group>"; };
+		04C56D4D26B186F9006CE1C9 /* ExternalInputControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalInputControl.h; sourceTree = "<group>"; };
+		04C56D4E26B186F9006CE1C9 /* TVControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVControl.h; sourceTree = "<group>"; };
+		04C56D5026B186F9006CE1C9 /* NetcastTVServiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetcastTVServiceConfig.h; sourceTree = "<group>"; };
+		04C56D5126B186F9006CE1C9 /* ServiceDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceDescription.h; sourceTree = "<group>"; };
+		04C56D5226B186F9006CE1C9 /* ServiceConfigDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceConfigDelegate.h; sourceTree = "<group>"; };
+		04C56D5326B186F9006CE1C9 /* ServiceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceConfig.m; sourceTree = "<group>"; };
+		04C56D5426B186F9006CE1C9 /* WebOSTVServiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSTVServiceConfig.h; sourceTree = "<group>"; };
+		04C56D5526B186F9006CE1C9 /* NetcastTVServiceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetcastTVServiceConfig.m; sourceTree = "<group>"; };
+		04C56D5626B186F9006CE1C9 /* ServiceDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceDescription.m; sourceTree = "<group>"; };
+		04C56D5726B186F9006CE1C9 /* ServiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceConfig.h; sourceTree = "<group>"; };
+		04C56D5826B186F9006CE1C9 /* WebOSTVServiceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOSTVServiceConfig.m; sourceTree = "<group>"; };
+		04C56D5926B186F9006CE1C9 /* AirPlayService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayService.m; sourceTree = "<group>"; };
+		04C56D5A26B186F9006CE1C9 /* DLNAService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNAService.m; sourceTree = "<group>"; };
+		04C56D5B26B186F9006CE1C9 /* NetcastTVService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetcastTVService.h; sourceTree = "<group>"; };
+		04C56D5C26B186F9006CE1C9 /* AirPlayService_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayService_Private.h; sourceTree = "<group>"; };
+		04C56D5D26B186F9006CE1C9 /* RokuService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RokuService.m; sourceTree = "<group>"; };
+		04C56D5E26B186F9006CE1C9 /* WebOSTVService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOSTVService.m; sourceTree = "<group>"; };
+		04C56D5F26B186F9006CE1C9 /* DeviceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceService.m; sourceTree = "<group>"; };
+		04C56D6126B186F9006CE1C9 /* WebAppSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppSession.m; sourceTree = "<group>"; };
+		04C56D6226B186F9006CE1C9 /* LaunchSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchSession.m; sourceTree = "<group>"; };
+		04C56D6326B186F9006CE1C9 /* AirPlayWebAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayWebAppSession.h; sourceTree = "<group>"; };
+		04C56D6426B186F9006CE1C9 /* WebOSWebAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSWebAppSession.h; sourceTree = "<group>"; };
+		04C56D6526B186F9006CE1C9 /* WebAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppSession.h; sourceTree = "<group>"; };
+		04C56D6626B186F9006CE1C9 /* LaunchSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchSession.h; sourceTree = "<group>"; };
+		04C56D6726B186F9006CE1C9 /* WebOSWebAppSession_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSWebAppSession_Private.h; sourceTree = "<group>"; };
+		04C56D6826B186F9006CE1C9 /* WebAppSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppSessionDelegate.h; sourceTree = "<group>"; };
+		04C56D6926B186F9006CE1C9 /* WebOSWebAppSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOSWebAppSession.m; sourceTree = "<group>"; };
+		04C56D6A26B186F9006CE1C9 /* AirPlayWebAppSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayWebAppSession.m; sourceTree = "<group>"; };
+		04C56D6B26B186F9006CE1C9 /* DIALService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIALService.m; sourceTree = "<group>"; };
+		04C56D6C26B186F9006CE1C9 /* DLNAService_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAService_Private.h; sourceTree = "<group>"; };
+		04C56D6D26B186F9006CE1C9 /* RokuService_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RokuService_Private.h; sourceTree = "<group>"; };
+		04C56D6F26B186F9006CE1C9 /* ServiceSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceSubscription.m; sourceTree = "<group>"; };
+		04C56D7026B186F9006CE1C9 /* ServiceCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCommand.h; sourceTree = "<group>"; };
+		04C56D7126B186F9006CE1C9 /* ServiceAsyncCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAsyncCommand.h; sourceTree = "<group>"; };
+		04C56D7226B186F9006CE1C9 /* ServiceCommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCommandDelegate.h; sourceTree = "<group>"; };
+		04C56D7326B186F9006CE1C9 /* ServiceSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceSubscription.h; sourceTree = "<group>"; };
+		04C56D7426B186F9006CE1C9 /* ServiceAsyncCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAsyncCommand.m; sourceTree = "<group>"; };
+		04C56D7526B186F9006CE1C9 /* ServiceCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceCommand.m; sourceTree = "<group>"; };
+		04C56D7626B186F9006CE1C9 /* NetcastTVService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetcastTVService.m; sourceTree = "<group>"; };
+		04C56D7726B186F9006CE1C9 /* DLNAService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAService.h; sourceTree = "<group>"; };
+		04C56D7826B186F9006CE1C9 /* AirPlayService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayService.h; sourceTree = "<group>"; };
+		04C56D7926B186F9006CE1C9 /* RokuService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RokuService.h; sourceTree = "<group>"; };
+		04C56D7B26B186F9006CE1C9 /* XMLWriter+ConvenienceMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XMLWriter+ConvenienceMethods.m"; sourceTree = "<group>"; };
+		04C56D7C26B186F9006CE1C9 /* AirPlayServiceHTTP_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayServiceHTTP_Private.h; sourceTree = "<group>"; };
+		04C56D7D26B186F9006CE1C9 /* WebOSTVServiceMouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOSTVServiceMouse.m; sourceTree = "<group>"; };
+		04C56D7E26B186F9006CE1C9 /* NSObject+FeatureNotSupported_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FeatureNotSupported_Private.h"; sourceTree = "<group>"; };
+		04C56D7F26B186F9006CE1C9 /* WebOSTVServiceSocketClient_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSTVServiceSocketClient_Private.h; sourceTree = "<group>"; };
+		04C56D8026B186F9006CE1C9 /* AirPlayServiceMirrored.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayServiceMirrored.m; sourceTree = "<group>"; };
+		04C56D8126B186F9006CE1C9 /* WebOSTVServiceSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOSTVServiceSocketClient.m; sourceTree = "<group>"; };
+		04C56D8226B186F9006CE1C9 /* AirPlayServiceHTTPKeepAlive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayServiceHTTPKeepAlive.h; sourceTree = "<group>"; };
+		04C56D8326B186F9006CE1C9 /* DLNAHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAHTTPServer.h; sourceTree = "<group>"; };
+		04C56D8426B186F9006CE1C9 /* AirPlayServiceHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayServiceHTTP.h; sourceTree = "<group>"; };
+		04C56D8526B186FA006CE1C9 /* XMLWriter+ConvenienceMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMLWriter+ConvenienceMethods.h"; sourceTree = "<group>"; };
+		04C56D8626B186FA006CE1C9 /* NSObject+FeatureNotSupported_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FeatureNotSupported_Private.m"; sourceTree = "<group>"; };
+		04C56D8726B186FA006CE1C9 /* DLNAHTTPServer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAHTTPServer_Private.h; sourceTree = "<group>"; };
+		04C56D8826B186FA006CE1C9 /* WebOSTVServiceMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSTVServiceMouse.h; sourceTree = "<group>"; };
+		04C56D8926B186FA006CE1C9 /* AirPlayServiceMirrored.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayServiceMirrored.h; sourceTree = "<group>"; };
+		04C56D8A26B186FA006CE1C9 /* AirPlayServiceHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayServiceHTTP.m; sourceTree = "<group>"; };
+		04C56D8B26B186FA006CE1C9 /* DLNAHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNAHTTPServer.m; sourceTree = "<group>"; };
+		04C56D8C26B186FA006CE1C9 /* AirPlayServiceHTTPKeepAlive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayServiceHTTPKeepAlive.m; sourceTree = "<group>"; };
+		04C56D8D26B186FA006CE1C9 /* WebOSTVServiceSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOSTVServiceSocketClient.h; sourceTree = "<group>"; };
+		04C56D8E26B186FA006CE1C9 /* DeviceServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceServiceDelegate.h; sourceTree = "<group>"; };
+		04C56D9026B186FA006CE1C9 /* ConnectableDeviceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectableDeviceStore.h; sourceTree = "<group>"; };
+		04C56D9126B186FA006CE1C9 /* DevicePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePickerDelegate.h; sourceTree = "<group>"; };
+		04C56D9226B186FA006CE1C9 /* DevicePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicePicker.m; sourceTree = "<group>"; };
+		04C56D9326B186FA006CE1C9 /* ConnectableDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectableDevice.m; sourceTree = "<group>"; };
+		04C56D9426B186FA006CE1C9 /* DefaultConnectableDeviceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultConnectableDeviceStore.h; sourceTree = "<group>"; };
+		04C56D9526B186FA006CE1C9 /* ConnectableDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectableDeviceDelegate.h; sourceTree = "<group>"; };
+		04C56D9626B186FA006CE1C9 /* DevicePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePicker.h; sourceTree = "<group>"; };
+		04C56D9726B186FA006CE1C9 /* DefaultConnectableDeviceStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultConnectableDeviceStore.m; sourceTree = "<group>"; };
+		04C56D9826B186FA006CE1C9 /* ConnectableDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectableDevice.h; sourceTree = "<group>"; };
+		04C56D9926B186FA006CE1C9 /* ConnectSDKDefaultPlatforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectSDKDefaultPlatforms.h; sourceTree = "<group>"; };
+		04C56D9B26B186FA006CE1C9 /* ConnectSDK.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = ConnectSDK.modulemap; sourceTree = "<group>"; };
+		04C56D9C26B186FA006CE1C9 /* ConnectSDK-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ConnectSDK-prefix.pch"; sourceTree = "<group>"; };
+		04C56D9D26B186FA006CE1C9 /* ConnectSDK.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ConnectSDK.release.xcconfig; sourceTree = "<group>"; };
+		04C56D9E26B186FA006CE1C9 /* ConnectSDK-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ConnectSDK-dummy.m"; sourceTree = "<group>"; };
+		04C56D9F26B186FA006CE1C9 /* ConnectSDK-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ConnectSDK-umbrella.h"; sourceTree = "<group>"; };
+		04C56DA026B186FA006CE1C9 /* ConnectSDK.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ConnectSDK.debug.xcconfig; sourceTree = "<group>"; };
+		04C56DA126B186FA006CE1C9 /* ConnectSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ConnectSDK-Info.plist"; sourceTree = "<group>"; };
+		04F1B6E626B0632600C18858 /* ControlTouchpadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlTouchpadView.h; sourceTree = "<group>"; };
+		04F1B6E726B0632600C18858 /* ControlTouchpadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlTouchpadView.m; sourceTree = "<group>"; };
+		04F1B6E826B0632600C18858 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04F1B6E926B0632600C18858 /* Configuration.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		04F1B6EB26B0632600C18858 /* Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigation.h; sourceTree = "<group>"; };
+		04F1B6EC26B0632600C18858 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		04F1B6ED26B0632600C18858 /* Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Navigation.m; sourceTree = "<group>"; };
+		04F1B6EE26B0632600C18858 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		04F1B6EF26B0632600C18858 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04F1B6F126B0632600C18858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F1B6F326B0632600C18858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F1B6F626B0632600C18858 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		04F1B6F726B0632600C18858 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		04F1B6F926B0632600C18858 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04F1B6FA26B0632600C18858 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04F1B6FD26B0632600C18858 /* Intro2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro2ViewController.m; sourceTree = "<group>"; };
+		04F1B6FE26B0632600C18858 /* Intro2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro2ViewController.h; sourceTree = "<group>"; };
+		04F1B6FF26B0632600C18858 /* IntroViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewViewController.m; sourceTree = "<group>"; };
+		04F1B70026B0632600C18858 /* intro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro2.mp4; sourceTree = "<group>"; };
+		04F1B70126B0632600C18858 /* intro1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro1.mp4; sourceTree = "<group>"; };
+		04F1B70226B0632600C18858 /* SubBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubBViewController.h; sourceTree = "<group>"; };
+		04F1B70426B0632600C18858 /* Intro1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro1ViewController.h; sourceTree = "<group>"; };
+		04F1B70526B0632600C18858 /* Intro1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro1ViewController.m; sourceTree = "<group>"; };
+		04F1B70626B0632600C18858 /* IntroViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewViewController.h; sourceTree = "<group>"; };
+		04F1B70726B0632600C18858 /* SubBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubBViewController.m; sourceTree = "<group>"; };
+		04F1B70826B0632600C18858 /* sub.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sub.mp4; sourceTree = "<group>"; };
+		04F1B70A26B0632600C18858 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		04F1B70B26B0632600C18858 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		04F1B70D26B0632600C18858 /* SubAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubAViewController.m; sourceTree = "<group>"; };
+		04F1B70E26B0632600C18858 /* SubAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubAViewController.h; sourceTree = "<group>"; };
+		04F1B71026B0632600C18858 /* ChanelsVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanelsVCViewController.h; sourceTree = "<group>"; };
+		04F1B71126B0632600C18858 /* ChanelsVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChanelsVCViewController.m; sourceTree = "<group>"; };
+		04F1B71326B0632600C18858 /* DetectTVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectTVViewController.m; sourceTree = "<group>"; };
+		04F1B71426B0632600C18858 /* DetectTVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectTVViewController.h; sourceTree = "<group>"; };
+		04F1B71626B0632600C18858 /* BaseSubVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSubVViewController.h; sourceTree = "<group>"; };
+		04F1B71726B0632600C18858 /* BaseSubVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSubVViewController.m; sourceTree = "<group>"; };
+		04F1B71826B0632600C18858 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F1B71A26B0632600C18858 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		04F1B71B26B0632600C18858 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		04F1B71C26B0632600C18858 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04F1B71F26B0632600C18858 /* ChanelsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChanelsCollectionViewCell.xib; sourceTree = "<group>"; };
+		04F1B72026B0632600C18858 /* ChanelsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChanelsCollectionViewCell.m; sourceTree = "<group>"; };
+		04F1B72126B0632600C18858 /* ChanelsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanelsCollectionViewCell.h; sourceTree = "<group>"; };
+		04F1B72326B0632600C18858 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		04F1B72426B0632600C18858 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		04F1B72526B0632600C18858 /* tablecellsubview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tablecellsubview.xib; sourceTree = "<group>"; };
+		04F1B72726B0632600C18858 /* TabbarSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarSubView.h; sourceTree = "<group>"; };
+		04F1B72826B0632600C18858 /* tabbarsubview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tabbarsubview.xib; sourceTree = "<group>"; };
+		04F1B72926B0632600C18858 /* TabbarSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarSubView.m; sourceTree = "<group>"; };
+		04F1B72B26B0632600C18858 /* numboardsubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numboardsubView.h; sourceTree = "<group>"; };
+		04F1B72C26B0632600C18858 /* numboardsubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numboardsubView.m; sourceTree = "<group>"; };
+		04F1B72D26B0632600C18858 /* numboardsubView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = numboardsubView.xib; sourceTree = "<group>"; };
+		04F1B72F26B0632600C18858 /* DetectTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetectTVCell.xib; sourceTree = "<group>"; };
+		04F1B73026B0632600C18858 /* DetectTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectTVCell.m; sourceTree = "<group>"; };
+		04F1B73126B0632600C18858 /* DetectTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectTVCell.h; sourceTree = "<group>"; };
+		04F1B73226B0632600C18858 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F1B73426B0632600C18858 /* TabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarController.m; sourceTree = "<group>"; };
+		04F1B73526B0632600C18858 /* TabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarController.h; sourceTree = "<group>"; };
+		04F1B75A26B063C600C18858 /* Assets.xcassets 16-19-01-002.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets 16-19-01-002.xcassets"; sourceTree = SOURCE_ROOT; };
+		04F1B8AE26B063E500C18858 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
+		04F1B8AF26B063E500C18858 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		740854E85364BD935FD1E468 /* libPods-TV Remote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TV Remote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7ED9ECD2B1E7042942E8ED6 /* Pods-TV Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Remote.release.xcconfig"; path = "Target Support Files/Pods-TV Remote/Pods-TV Remote.release.xcconfig"; sourceTree = "<group>"; };
+		F90EB76253D607AF5614F35D /* Pods-TV Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Remote.debug.xcconfig"; path = "Target Support Files/Pods-TV Remote/Pods-TV Remote.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044B55F7265BA1260074C42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1AF0F269446740031B3AE /* StoreKit.framework in Frameworks */,
+				0067577B4206E8C60EAF60D8 /* libPods-TV Remote.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044B55F1265BA1260074C42E = {
+			isa = PBXGroup;
+			children = (
+				04F1B6E426B0632600C18858 /* TV Remote */,
+				044B55FB265BA1260074C42E /* Products */,
+				D941BA5CFEB92DF8C1BD55A3 /* Pods */,
+				B369E2EC00D32A76BBC0C740 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		044B55FB265BA1260074C42E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044B55FA265BA1260074C42E /* TV Remote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04C56CAB26B186F9006CE1C9 /* ConnectSDK */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CAC26B186F9006CE1C9 /* core */,
+				04C56D9926B186FA006CE1C9 /* ConnectSDKDefaultPlatforms.h */,
+				04C56D9A26B186FA006CE1C9 /* support */,
+			);
+			path = ConnectSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		04C56CAC26B186F9006CE1C9 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CAD26B186F9006CE1C9 /* ConnectSDK.h */,
+				04C56CAE26B186F9006CE1C9 /* Discovery */,
+				04C56CBF26B186F9006CE1C9 /* Frameworks */,
+				04C56D0C26B186F9006CE1C9 /* Helpers */,
+				04C56D3926B186F9006CE1C9 /* Services */,
+				04C56D8F26B186FA006CE1C9 /* Devices */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		04C56CAE26B186F9006CE1C9 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CAF26B186F9006CE1C9 /* DiscoveryProvider.h */,
+				04C56CB026B186F9006CE1C9 /* Providers */,
+				04C56CB726B186F9006CE1C9 /* DiscoveryManager_Private.h */,
+				04C56CB826B186F9006CE1C9 /* DiscoveryManager.m */,
+				04C56CB926B186F9006CE1C9 /* CapabilityFilter.h */,
+				04C56CBA26B186F9006CE1C9 /* DiscoveryProvider.m */,
+				04C56CBB26B186F9006CE1C9 /* DiscoveryManager.h */,
+				04C56CBC26B186F9006CE1C9 /* CapabilityFilter.m */,
+				04C56CBD26B186F9006CE1C9 /* DiscoveryManagerDelegate.h */,
+				04C56CBE26B186F9006CE1C9 /* DiscoveryProviderDelegate.h */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		04C56CB026B186F9006CE1C9 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CB126B186F9006CE1C9 /* SSDPDiscoveryProvider_Private.h */,
+				04C56CB226B186F9006CE1C9 /* ZeroConfDiscoveryProvider_Private.h */,
+				04C56CB326B186F9006CE1C9 /* ZeroConfDiscoveryProvider.h */,
+				04C56CB426B186F9006CE1C9 /* SSDPDiscoveryProvider.h */,
+				04C56CB526B186F9006CE1C9 /* ZeroConfDiscoveryProvider.m */,
+				04C56CB626B186F9006CE1C9 /* SSDPDiscoveryProvider.m */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		04C56CBF26B186F9006CE1C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CC026B186F9006CE1C9 /* GCDWebServer */,
+				04C56CE226B186F9006CE1C9 /* SocketRocket */,
+				04C56CE626B186F9006CE1C9 /* asi-http-request */,
+				04C56D0126B186F9006CE1C9 /* XMLReader */,
+				04C56D0526B186F9006CE1C9 /* objc-guid */,
+				04C56D0926B186F9006CE1C9 /* xswi */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		04C56CC026B186F9006CE1C9 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CC126B186F9006CE1C9 /* Core */,
+				04C56CCE26B186F9006CE1C9 /* LICENSE */,
+				04C56CCF26B186F9006CE1C9 /* Responses */,
+				04C56CD826B186F9006CE1C9 /* Requests */,
+				04C56CE126B186F9006CE1C9 /* VERSION */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		04C56CC126B186F9006CE1C9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CC226B186F9006CE1C9 /* GCDWebServerFunctions.h */,
+				04C56CC326B186F9006CE1C9 /* GCDWebServerPrivate.h */,
+				04C56CC426B186F9006CE1C9 /* GCDWebServerResponse.m */,
+				04C56CC526B186F9006CE1C9 /* GCDWebServerConnection.h */,
+				04C56CC626B186F9006CE1C9 /* GCDWebServer.h */,
+				04C56CC726B186F9006CE1C9 /* GCDWebServerRequest.m */,
+				04C56CC826B186F9006CE1C9 /* GCDWebServerHTTPStatusCodes.h */,
+				04C56CC926B186F9006CE1C9 /* GCDWebServerResponse.h */,
+				04C56CCA26B186F9006CE1C9 /* GCDWebServerFunctions.m */,
+				04C56CCB26B186F9006CE1C9 /* GCDWebServer.m */,
+				04C56CCC26B186F9006CE1C9 /* GCDWebServerConnection.m */,
+				04C56CCD26B186F9006CE1C9 /* GCDWebServerRequest.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		04C56CCF26B186F9006CE1C9 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CD026B186F9006CE1C9 /* GCDWebServerFileResponse.h */,
+				04C56CD126B186F9006CE1C9 /* GCDWebServerStreamedResponse.h */,
+				04C56CD226B186F9006CE1C9 /* GCDWebServerErrorResponse.m */,
+				04C56CD326B186F9006CE1C9 /* GCDWebServerDataResponse.h */,
+				04C56CD426B186F9006CE1C9 /* GCDWebServerFileResponse.m */,
+				04C56CD526B186F9006CE1C9 /* GCDWebServerDataResponse.m */,
+				04C56CD626B186F9006CE1C9 /* GCDWebServerErrorResponse.h */,
+				04C56CD726B186F9006CE1C9 /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		04C56CD826B186F9006CE1C9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CD926B186F9006CE1C9 /* GCDWebServerDataRequest.h */,
+				04C56CDA26B186F9006CE1C9 /* GCDWebServerMultiPartFormRequest.h */,
+				04C56CDB26B186F9006CE1C9 /* GCDWebServerFileRequest.h */,
+				04C56CDC26B186F9006CE1C9 /* GCDWebServerURLEncodedFormRequest.m */,
+				04C56CDD26B186F9006CE1C9 /* GCDWebServerMultiPartFormRequest.m */,
+				04C56CDE26B186F9006CE1C9 /* GCDWebServerDataRequest.m */,
+				04C56CDF26B186F9006CE1C9 /* GCDWebServerFileRequest.m */,
+				04C56CE026B186F9006CE1C9 /* GCDWebServerURLEncodedFormRequest.h */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		04C56CE226B186F9006CE1C9 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CE326B186F9006CE1C9 /* LICENSE */,
+				04C56CE426B186F9006CE1C9 /* LGSRWebSocket.h */,
+				04C56CE526B186F9006CE1C9 /* LGSRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		04C56CE626B186F9006CE1C9 /* asi-http-request */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CE726B186F9006CE1C9 /* LICENSE */,
+				04C56CE826B186F9006CE1C9 /* Classes */,
+				04C56CFD26B186F9006CE1C9 /* External */,
+			);
+			path = "asi-http-request";
+			sourceTree = "<group>";
+		};
+		04C56CE826B186F9006CE1C9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CE926B186F9006CE1C9 /* CTASIProgressDelegate.h */,
+				04C56CEA26B186F9006CE1C9 /* CTASIDownloadCache.m */,
+				04C56CEB26B186F9006CE1C9 /* CTASIHTTPRequestConfig.h */,
+				04C56CEC26B186F9006CE1C9 /* CTASIHTTPRequest.m */,
+				04C56CED26B186F9006CE1C9 /* CTASIHTTPRequestDelegate.h */,
+				04C56CEE26B186F9006CE1C9 /* CTASIInputStream.m */,
+				04C56CEF26B186F9006CE1C9 /* CTASIAuthenticationDialog.h */,
+				04C56CF026B186F9006CE1C9 /* CTASIDataCompressor.m */,
+				04C56CF126B186F9006CE1C9 /* CTASINetworkQueue.h */,
+				04C56CF226B186F9006CE1C9 /* CTASICacheDelegate.h */,
+				04C56CF326B186F9006CE1C9 /* CTASIDataDecompressor.h */,
+				04C56CF426B186F9006CE1C9 /* CTASIFormDataRequest.m */,
+				04C56CF526B186F9006CE1C9 /* CTASIDownloadCache.h */,
+				04C56CF626B186F9006CE1C9 /* CTASIHTTPRequest.h */,
+				04C56CF726B186F9006CE1C9 /* CTASIDataCompressor.h */,
+				04C56CF826B186F9006CE1C9 /* CTASIAuthenticationDialog.m */,
+				04C56CF926B186F9006CE1C9 /* CTASIInputStream.h */,
+				04C56CFA26B186F9006CE1C9 /* CTASIFormDataRequest.h */,
+				04C56CFB26B186F9006CE1C9 /* CTASIDataDecompressor.m */,
+				04C56CFC26B186F9006CE1C9 /* CTASINetworkQueue.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04C56CFD26B186F9006CE1C9 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CFE26B186F9006CE1C9 /* Reachability */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		04C56CFE26B186F9006CE1C9 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CFF26B186F9006CE1C9 /* CTReachability.m */,
+				04C56D0026B186F9006CE1C9 /* CTReachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		04C56D0126B186F9006CE1C9 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D0226B186F9006CE1C9 /* LICENSE */,
+				04C56D0326B186F9006CE1C9 /* CTXMLReader.h */,
+				04C56D0426B186F9006CE1C9 /* CTXMLReader.m */,
+			);
+			path = XMLReader;
+			sourceTree = "<group>";
+		};
+		04C56D0526B186F9006CE1C9 /* objc-guid */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D0626B186F9006CE1C9 /* LICENSE */,
+				04C56D0726B186F9006CE1C9 /* CTGuid.m */,
+				04C56D0826B186F9006CE1C9 /* CTGuid.h */,
+			);
+			path = "objc-guid";
+			sourceTree = "<group>";
+		};
+		04C56D0926B186F9006CE1C9 /* xswi */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D0A26B186F9006CE1C9 /* XMLWriter.m */,
+				04C56D0B26B186F9006CE1C9 /* XMLWriter.h */,
+			);
+			path = xswi;
+			sourceTree = "<group>";
+		};
+		04C56D0C26B186F9006CE1C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D0D26B186F9006CE1C9 /* ConnectUtil.h */,
+				04C56D0E26B186F9006CE1C9 /* ProgramInfo.h */,
+				04C56D0F26B186F9006CE1C9 /* JSONObjectCoding.h */,
+				04C56D1026B186F9006CE1C9 /* TextInputStatusInfo.m */,
+				04C56D1126B186F9006CE1C9 /* NSString+Common.h */,
+				04C56D1226B186F9006CE1C9 /* SubtitleInfo.m */,
+				04C56D1326B186F9006CE1C9 /* ExternalInputInfo.h */,
+				04C56D1426B186F9006CE1C9 /* MediaLaunchObject.m */,
+				04C56D1526B186F9006CE1C9 /* MediaInfo.h */,
+				04C56D1626B186F9006CE1C9 /* ImageInfo.m */,
+				04C56D1726B186F9006CE1C9 /* NSMutableDictionary+NilSafe.h */,
+				04C56D1826B186F9006CE1C9 /* SSDPSocketListener.m */,
+				04C56D1926B186F9006CE1C9 /* DeviceServiceReachability.m */,
+				04C56D1A26B186F9006CE1C9 /* NSDictionary+KeyPredicateSearch.m */,
+				04C56D1B26B186F9006CE1C9 /* AppStateChangeNotifier.m */,
+				04C56D1C26B186F9006CE1C9 /* ConnectError.h */,
+				04C56D1D26B186F9006CE1C9 /* AppInfo.h */,
+				04C56D1E26B186F9006CE1C9 /* ChannelInfo.m */,
+				04C56D1F26B186F9006CE1C9 /* BlockRunner */,
+				04C56D2526B186F9006CE1C9 /* CommonMacros.h */,
+				04C56D2626B186F9006CE1C9 /* SubscriptionDeduplicator.m */,
+				04C56D2726B186F9006CE1C9 /* NSString+Common.m */,
+				04C56D2826B186F9006CE1C9 /* TextInputStatusInfo.h */,
+				04C56D2926B186F9006CE1C9 /* ProgramInfo.m */,
+				04C56D2A26B186F9006CE1C9 /* ConnectUtil.m */,
+				04C56D2B26B186F9006CE1C9 /* MediaInfo.m */,
+				04C56D2C26B186F9006CE1C9 /* MediaLaunchObject.h */,
+				04C56D2D26B186F9006CE1C9 /* SubtitleInfo.h */,
+				04C56D2E26B186F9006CE1C9 /* ExternalInputInfo.m */,
+				04C56D2F26B186F9006CE1C9 /* AppStateChangeNotifier.h */,
+				04C56D3026B186F9006CE1C9 /* NSDictionary+KeyPredicateSearch.h */,
+				04C56D3126B186F9006CE1C9 /* SSDPSocketListener.h */,
+				04C56D3226B186F9006CE1C9 /* NSMutableDictionary+NilSafe.m */,
+				04C56D3326B186F9006CE1C9 /* DeviceServiceReachability.h */,
+				04C56D3426B186F9006CE1C9 /* ImageInfo.h */,
+				04C56D3526B186F9006CE1C9 /* SubscriptionDeduplicator.h */,
+				04C56D3626B186F9006CE1C9 /* ChannelInfo.h */,
+				04C56D3726B186F9006CE1C9 /* AppInfo.m */,
+				04C56D3826B186F9006CE1C9 /* ConnectError.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04C56D1F26B186F9006CE1C9 /* BlockRunner */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D2026B186F9006CE1C9 /* SynchronousBlockRunner.m */,
+				04C56D2126B186F9006CE1C9 /* DispatchQueueBlockRunner.h */,
+				04C56D2226B186F9006CE1C9 /* BlockRunner.h */,
+				04C56D2326B186F9006CE1C9 /* SynchronousBlockRunner.h */,
+				04C56D2426B186F9006CE1C9 /* DispatchQueueBlockRunner.m */,
+			);
+			path = BlockRunner;
+			sourceTree = "<group>";
+		};
+		04C56D3926B186F9006CE1C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D3A26B186F9006CE1C9 /* WebOSTVService_Private.h */,
+				04C56D3B26B186F9006CE1C9 /* DIALService.h */,
+				04C56D3C26B186F9006CE1C9 /* DeviceService.h */,
+				04C56D3D26B186F9006CE1C9 /* WebOSTVService.h */,
+				04C56D3E26B186F9006CE1C9 /* NetcastTVService_Private.h */,
+				04C56D3F26B186F9006CE1C9 /* Capabilities */,
+				04C56D4F26B186F9006CE1C9 /* Config */,
+				04C56D5926B186F9006CE1C9 /* AirPlayService.m */,
+				04C56D5A26B186F9006CE1C9 /* DLNAService.m */,
+				04C56D5B26B186F9006CE1C9 /* NetcastTVService.h */,
+				04C56D5C26B186F9006CE1C9 /* AirPlayService_Private.h */,
+				04C56D5D26B186F9006CE1C9 /* RokuService.m */,
+				04C56D5E26B186F9006CE1C9 /* WebOSTVService.m */,
+				04C56D5F26B186F9006CE1C9 /* DeviceService.m */,
+				04C56D6026B186F9006CE1C9 /* Sessions */,
+				04C56D6B26B186F9006CE1C9 /* DIALService.m */,
+				04C56D6C26B186F9006CE1C9 /* DLNAService_Private.h */,
+				04C56D6D26B186F9006CE1C9 /* RokuService_Private.h */,
+				04C56D6E26B186F9006CE1C9 /* Commands */,
+				04C56D7626B186F9006CE1C9 /* NetcastTVService.m */,
+				04C56D7726B186F9006CE1C9 /* DLNAService.h */,
+				04C56D7826B186F9006CE1C9 /* AirPlayService.h */,
+				04C56D7926B186F9006CE1C9 /* RokuService.h */,
+				04C56D7A26B186F9006CE1C9 /* Helpers */,
+				04C56D8E26B186FA006CE1C9 /* DeviceServiceDelegate.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04C56D3F26B186F9006CE1C9 /* Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D4026B186F9006CE1C9 /* MediaPlayer.h */,
+				04C56D4126B186F9006CE1C9 /* PowerControl.h */,
+				04C56D4226B186F9006CE1C9 /* CapabilityConstants.m */,
+				04C56D4326B186F9006CE1C9 /* Capability.h */,
+				04C56D4426B186F9006CE1C9 /* Launcher.h */,
+				04C56D4526B186F9006CE1C9 /* ToastControl.h */,
+				04C56D4626B186F9006CE1C9 /* KeyControl.h */,
+				04C56D4726B186F9006CE1C9 /* MediaControl.h */,
+				04C56D4826B186F9006CE1C9 /* PlayListControl.h */,
+				04C56D4926B186F9006CE1C9 /* TextInputControl.h */,
+				04C56D4A26B186F9006CE1C9 /* VolumeControl.h */,
+				04C56D4B26B186F9006CE1C9 /* MouseControl.h */,
+				04C56D4C26B186F9006CE1C9 /* WebAppLauncher.h */,
+				04C56D4D26B186F9006CE1C9 /* ExternalInputControl.h */,
+				04C56D4E26B186F9006CE1C9 /* TVControl.h */,
+			);
+			path = Capabilities;
+			sourceTree = "<group>";
+		};
+		04C56D4F26B186F9006CE1C9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D5026B186F9006CE1C9 /* NetcastTVServiceConfig.h */,
+				04C56D5126B186F9006CE1C9 /* ServiceDescription.h */,
+				04C56D5226B186F9006CE1C9 /* ServiceConfigDelegate.h */,
+				04C56D5326B186F9006CE1C9 /* ServiceConfig.m */,
+				04C56D5426B186F9006CE1C9 /* WebOSTVServiceConfig.h */,
+				04C56D5526B186F9006CE1C9 /* NetcastTVServiceConfig.m */,
+				04C56D5626B186F9006CE1C9 /* ServiceDescription.m */,
+				04C56D5726B186F9006CE1C9 /* ServiceConfig.h */,
+				04C56D5826B186F9006CE1C9 /* WebOSTVServiceConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		04C56D6026B186F9006CE1C9 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D6126B186F9006CE1C9 /* WebAppSession.m */,
+				04C56D6226B186F9006CE1C9 /* LaunchSession.m */,
+				04C56D6326B186F9006CE1C9 /* AirPlayWebAppSession.h */,
+				04C56D6426B186F9006CE1C9 /* WebOSWebAppSession.h */,
+				04C56D6526B186F9006CE1C9 /* WebAppSession.h */,
+				04C56D6626B186F9006CE1C9 /* LaunchSession.h */,
+				04C56D6726B186F9006CE1C9 /* WebOSWebAppSession_Private.h */,
+				04C56D6826B186F9006CE1C9 /* WebAppSessionDelegate.h */,
+				04C56D6926B186F9006CE1C9 /* WebOSWebAppSession.m */,
+				04C56D6A26B186F9006CE1C9 /* AirPlayWebAppSession.m */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		04C56D6E26B186F9006CE1C9 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D6F26B186F9006CE1C9 /* ServiceSubscription.m */,
+				04C56D7026B186F9006CE1C9 /* ServiceCommand.h */,
+				04C56D7126B186F9006CE1C9 /* ServiceAsyncCommand.h */,
+				04C56D7226B186F9006CE1C9 /* ServiceCommandDelegate.h */,
+				04C56D7326B186F9006CE1C9 /* ServiceSubscription.h */,
+				04C56D7426B186F9006CE1C9 /* ServiceAsyncCommand.m */,
+				04C56D7526B186F9006CE1C9 /* ServiceCommand.m */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		04C56D7A26B186F9006CE1C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D7B26B186F9006CE1C9 /* XMLWriter+ConvenienceMethods.m */,
+				04C56D7C26B186F9006CE1C9 /* AirPlayServiceHTTP_Private.h */,
+				04C56D7D26B186F9006CE1C9 /* WebOSTVServiceMouse.m */,
+				04C56D7E26B186F9006CE1C9 /* NSObject+FeatureNotSupported_Private.h */,
+				04C56D7F26B186F9006CE1C9 /* WebOSTVServiceSocketClient_Private.h */,
+				04C56D8026B186F9006CE1C9 /* AirPlayServiceMirrored.m */,
+				04C56D8126B186F9006CE1C9 /* WebOSTVServiceSocketClient.m */,
+				04C56D8226B186F9006CE1C9 /* AirPlayServiceHTTPKeepAlive.h */,
+				04C56D8326B186F9006CE1C9 /* DLNAHTTPServer.h */,
+				04C56D8426B186F9006CE1C9 /* AirPlayServiceHTTP.h */,
+				04C56D8526B186FA006CE1C9 /* XMLWriter+ConvenienceMethods.h */,
+				04C56D8626B186FA006CE1C9 /* NSObject+FeatureNotSupported_Private.m */,
+				04C56D8726B186FA006CE1C9 /* DLNAHTTPServer_Private.h */,
+				04C56D8826B186FA006CE1C9 /* WebOSTVServiceMouse.h */,
+				04C56D8926B186FA006CE1C9 /* AirPlayServiceMirrored.h */,
+				04C56D8A26B186FA006CE1C9 /* AirPlayServiceHTTP.m */,
+				04C56D8B26B186FA006CE1C9 /* DLNAHTTPServer.m */,
+				04C56D8C26B186FA006CE1C9 /* AirPlayServiceHTTPKeepAlive.m */,
+				04C56D8D26B186FA006CE1C9 /* WebOSTVServiceSocketClient.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04C56D8F26B186FA006CE1C9 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D9026B186FA006CE1C9 /* ConnectableDeviceStore.h */,
+				04C56D9126B186FA006CE1C9 /* DevicePickerDelegate.h */,
+				04C56D9226B186FA006CE1C9 /* DevicePicker.m */,
+				04C56D9326B186FA006CE1C9 /* ConnectableDevice.m */,
+				04C56D9426B186FA006CE1C9 /* DefaultConnectableDeviceStore.h */,
+				04C56D9526B186FA006CE1C9 /* ConnectableDeviceDelegate.h */,
+				04C56D9626B186FA006CE1C9 /* DevicePicker.h */,
+				04C56D9726B186FA006CE1C9 /* DefaultConnectableDeviceStore.m */,
+				04C56D9826B186FA006CE1C9 /* ConnectableDevice.h */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		04C56D9A26B186FA006CE1C9 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				04C56D9B26B186FA006CE1C9 /* ConnectSDK.modulemap */,
+				04C56D9C26B186FA006CE1C9 /* ConnectSDK-prefix.pch */,
+				04C56D9D26B186FA006CE1C9 /* ConnectSDK.release.xcconfig */,
+				04C56D9E26B186FA006CE1C9 /* ConnectSDK-dummy.m */,
+				04C56D9F26B186FA006CE1C9 /* ConnectSDK-umbrella.h */,
+				04C56DA026B186FA006CE1C9 /* ConnectSDK.debug.xcconfig */,
+				04C56DA126B186FA006CE1C9 /* ConnectSDK-Info.plist */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		04F1B6E426B0632600C18858 /* TV Remote */ = {
+			isa = PBXGroup;
+			children = (
+				04C56CAB26B186F9006CE1C9 /* ConnectSDK */,
+				04F1B6E526B0632600C18858 /* MouseTouchpad */,
+				04F1B6EA26B0632600C18858 /* Navigation */,
+				04F1B6F426B0632600C18858 /* Controller */,
+				04F1B71926B0632600C18858 /* lib */,
+				04F1B71D26B0632600C18858 /* subview */,
+				04F1B73326B0632600C18858 /* TabbarController */,
+				04F1B6E826B0632600C18858 /* AppDelegate.h */,
+				04F1B71C26B0632600C18858 /* AppDelegate.m */,
+				04F1B71826B0632600C18858 /* main.m */,
+				04F1B73226B0632600C18858 /* Info.plist */,
+				04F1B6EF26B0632600C18858 /* GoogleService-Info.plist */,
+				04F1B6E926B0632600C18858 /* Configuration.storekit */,
+				04F1B6F026B0632600C18858 /* LaunchScreen.storyboard */,
+				04F1B6F226B0632600C18858 /* Main.storyboard */,
+				04F1B8AF26B063E500C18858 /* Podfile */,
+				04F1B8AE26B063E500C18858 /* Podfile.lock */,
+				04F1B75A26B063C600C18858 /* Assets.xcassets 16-19-01-002.xcassets */,
+			);
+			path = "TV Remote";
+			sourceTree = "<group>";
+		};
+		04F1B6E526B0632600C18858 /* MouseTouchpad */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B6E626B0632600C18858 /* ControlTouchpadView.h */,
+				04F1B6E726B0632600C18858 /* ControlTouchpadView.m */,
+			);
+			path = MouseTouchpad;
+			sourceTree = "<group>";
+		};
+		04F1B6EA26B0632600C18858 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B6EB26B0632600C18858 /* Navigation.h */,
+				04F1B6EC26B0632600C18858 /* NavigationViewController.h */,
+				04F1B6ED26B0632600C18858 /* Navigation.m */,
+				04F1B6EE26B0632600C18858 /* NavigationViewController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		04F1B6F426B0632600C18858 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B6F526B0632600C18858 /* SplashVC */,
+				04F1B6F826B0632600C18858 /* RemoteVC */,
+				04F1B6FB26B0632600C18858 /* SubBVC */,
+				04F1B70926B0632600C18858 /* SettingVC */,
+				04F1B70C26B0632600C18858 /* SubsAVC */,
+				04F1B70F26B0632600C18858 /* ChanelsVC */,
+				04F1B71226B0632600C18858 /* DetecttvVC */,
+				04F1B71526B0632600C18858 /* BaseSubVC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04F1B6F526B0632600C18858 /* SplashVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B6F626B0632600C18858 /* SplashViewController.h */,
+				04F1B6F726B0632600C18858 /* SplashViewController.m */,
+			);
+			path = SplashVC;
+			sourceTree = "<group>";
+		};
+		04F1B6F826B0632600C18858 /* RemoteVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B6FA26B0632600C18858 /* ViewController.h */,
+				04F1B6F926B0632600C18858 /* ViewController.m */,
+			);
+			path = RemoteVC;
+			sourceTree = "<group>";
+		};
+		04F1B6FB26B0632600C18858 /* SubBVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B70326B0632600C18858 /* Intro1 */,
+				04F1B6FC26B0632600C18858 /* Intro2 */,
+				04F1B70026B0632600C18858 /* intro2.mp4 */,
+				04F1B70126B0632600C18858 /* intro1.mp4 */,
+				04F1B70826B0632600C18858 /* sub.mp4 */,
+				04F1B70226B0632600C18858 /* SubBViewController.h */,
+				04F1B70726B0632600C18858 /* SubBViewController.m */,
+				04F1B70626B0632600C18858 /* IntroViewViewController.h */,
+				04F1B6FF26B0632600C18858 /* IntroViewViewController.m */,
+			);
+			path = SubBVC;
+			sourceTree = "<group>";
+		};
+		04F1B6FC26B0632600C18858 /* Intro2 */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B6FD26B0632600C18858 /* Intro2ViewController.m */,
+				04F1B6FE26B0632600C18858 /* Intro2ViewController.h */,
+			);
+			path = Intro2;
+			sourceTree = "<group>";
+		};
+		04F1B70326B0632600C18858 /* Intro1 */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B70426B0632600C18858 /* Intro1ViewController.h */,
+				04F1B70526B0632600C18858 /* Intro1ViewController.m */,
+			);
+			path = Intro1;
+			sourceTree = "<group>";
+		};
+		04F1B70926B0632600C18858 /* SettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B70A26B0632600C18858 /* SettingsViewController.m */,
+				04F1B70B26B0632600C18858 /* SettingsViewController.h */,
+			);
+			path = SettingVC;
+			sourceTree = "<group>";
+		};
+		04F1B70C26B0632600C18858 /* SubsAVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B70D26B0632600C18858 /* SubAViewController.m */,
+				04F1B70E26B0632600C18858 /* SubAViewController.h */,
+			);
+			path = SubsAVC;
+			sourceTree = "<group>";
+		};
+		04F1B70F26B0632600C18858 /* ChanelsVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B71026B0632600C18858 /* ChanelsVCViewController.h */,
+				04F1B71126B0632600C18858 /* ChanelsVCViewController.m */,
+			);
+			path = ChanelsVC;
+			sourceTree = "<group>";
+		};
+		04F1B71226B0632600C18858 /* DetecttvVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B71326B0632600C18858 /* DetectTVViewController.m */,
+				04F1B71426B0632600C18858 /* DetectTVViewController.h */,
+			);
+			path = DetecttvVC;
+			sourceTree = "<group>";
+		};
+		04F1B71526B0632600C18858 /* BaseSubVC */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B71626B0632600C18858 /* BaseSubVViewController.h */,
+				04F1B71726B0632600C18858 /* BaseSubVViewController.m */,
+			);
+			path = BaseSubVC;
+			sourceTree = "<group>";
+		};
+		04F1B71926B0632600C18858 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B71A26B0632600C18858 /* Reachability.m */,
+				04F1B71B26B0632600C18858 /* Reachability.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		04F1B71D26B0632600C18858 /* subview */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B71E26B0632600C18858 /* ChanelsCollectionViewCell */,
+				04F1B72226B0632600C18858 /* Tablecellsubview */,
+				04F1B72626B0632600C18858 /* subview1 */,
+				04F1B72A26B0632600C18858 /* numboardsubview */,
+				04F1B72E26B0632600C18858 /* DetectTVCell */,
+			);
+			path = subview;
+			sourceTree = "<group>";
+		};
+		04F1B71E26B0632600C18858 /* ChanelsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B71F26B0632600C18858 /* ChanelsCollectionViewCell.xib */,
+				04F1B72026B0632600C18858 /* ChanelsCollectionViewCell.m */,
+				04F1B72126B0632600C18858 /* ChanelsCollectionViewCell.h */,
+			);
+			path = ChanelsCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		04F1B72226B0632600C18858 /* Tablecellsubview */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B72326B0632600C18858 /* TableViewCell.m */,
+				04F1B72426B0632600C18858 /* TableViewCell.h */,
+				04F1B72526B0632600C18858 /* tablecellsubview.xib */,
+			);
+			path = Tablecellsubview;
+			sourceTree = "<group>";
+		};
+		04F1B72626B0632600C18858 /* subview1 */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B72726B0632600C18858 /* TabbarSubView.h */,
+				04F1B72826B0632600C18858 /* tabbarsubview.xib */,
+				04F1B72926B0632600C18858 /* TabbarSubView.m */,
+			);
+			path = subview1;
+			sourceTree = "<group>";
+		};
+		04F1B72A26B0632600C18858 /* numboardsubview */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B72B26B0632600C18858 /* numboardsubView.h */,
+				04F1B72C26B0632600C18858 /* numboardsubView.m */,
+				04F1B72D26B0632600C18858 /* numboardsubView.xib */,
+			);
+			path = numboardsubview;
+			sourceTree = "<group>";
+		};
+		04F1B72E26B0632600C18858 /* DetectTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B72F26B0632600C18858 /* DetectTVCell.xib */,
+				04F1B73026B0632600C18858 /* DetectTVCell.m */,
+				04F1B73126B0632600C18858 /* DetectTVCell.h */,
+			);
+			path = DetectTVCell;
+			sourceTree = "<group>";
+		};
+		04F1B73326B0632600C18858 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				04F1B73426B0632600C18858 /* TabbarController.m */,
+				04F1B73526B0632600C18858 /* TabbarController.h */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		B369E2EC00D32A76BBC0C740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				046A4E3C26A7129E00459CCA /* CoreFoundation.framework */,
+				046A4E3926A7126500459CCA /* UIKit.framework */,
+				04A1AF0E269446740031B3AE /* StoreKit.framework */,
+				740854E85364BD935FD1E468 /* libPods-TV Remote.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D941BA5CFEB92DF8C1BD55A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F90EB76253D607AF5614F35D /* Pods-TV Remote.debug.xcconfig */,
+				E7ED9ECD2B1E7042942E8ED6 /* Pods-TV Remote.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044B55F9265BA1260074C42E /* TV Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044B5613265BA1290074C42E /* Build configuration list for PBXNativeTarget "TV Remote" */;
+			buildPhases = (
+				7707969E19EFDF56A6A9F6D2 /* [CP] Check Pods Manifest.lock */,
+				044B55F6265BA1260074C42E /* Sources */,
+				044B55F7265BA1260074C42E /* Frameworks */,
+				044B55F8265BA1260074C42E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TV Remote";
+			productName = LGUItest;
+			productReference = 044B55FA265BA1260074C42E /* TV Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044B55F2265BA1260074C42E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					044B55F9265BA1260074C42E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 044B55F5265BA1260074C42E /* Build configuration list for PBXProject "TV Remote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044B55F1265BA1260074C42E;
+			productRefGroup = 044B55FB265BA1260074C42E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044B55F9265BA1260074C42E /* TV Remote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044B55F8265BA1260074C42E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F1B75626B0632600C18858 /* DetectTVCell.xib in Resources */,
+				04C56DF926B186FA006CE1C9 /* ConnectSDK.release.xcconfig in Resources */,
+				04F1B74126B0632600C18858 /* intro2.mp4 in Resources */,
+				04F1B75226B0632600C18858 /* tabbarsubview.xib in Resources */,
+				04F1B74226B0632600C18858 /* intro1.mp4 in Resources */,
+				04F1B74526B0632600C18858 /* sub.mp4 in Resources */,
+				04F1B75526B0632600C18858 /* numboardsubView.xib in Resources */,
+				04F1B8B026B063E600C18858 /* Podfile.lock in Resources */,
+				04F1B73B26B0632600C18858 /* LaunchScreen.storyboard in Resources */,
+				04F1B75B26B063C600C18858 /* Assets.xcassets 16-19-01-002.xcassets in Resources */,
+				04F1B8B126B063E600C18858 /* Podfile in Resources */,
+				04F1B73C26B0632600C18858 /* Main.storyboard in Resources */,
+				04F1B73A26B0632600C18858 /* GoogleService-Info.plist in Resources */,
+				04F1B74E26B0632600C18858 /* ChanelsCollectionViewCell.xib in Resources */,
+				04C56DFC26B186FA006CE1C9 /* ConnectSDK-Info.plist in Resources */,
+				04C56DFB26B186FA006CE1C9 /* ConnectSDK.debug.xcconfig in Resources */,
+				04F1B73726B0632600C18858 /* Configuration.storekit in Resources */,
+				04F1B75126B0632600C18858 /* tablecellsubview.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7707969E19EFDF56A6A9F6D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TV Remote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044B55F6265BA1260074C42E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F1B75026B0632600C18858 /* TableViewCell.m in Sources */,
+				04C56DB026B186FA006CE1C9 /* GCDWebServerStreamedResponse.m in Sources */,
+				04C56DB326B186FA006CE1C9 /* GCDWebServerDataRequest.m in Sources */,
+				04C56DD026B186FA006CE1C9 /* SynchronousBlockRunner.m in Sources */,
+				04F1B73926B0632600C18858 /* NavigationViewController.m in Sources */,
+				04C56DDC26B186FA006CE1C9 /* ServiceConfig.m in Sources */,
+				04F1B74026B0632600C18858 /* IntroViewViewController.m in Sources */,
+				04C56DED26B186FA006CE1C9 /* NetcastTVService.m in Sources */,
+				04C56DFA26B186FA006CE1C9 /* ConnectSDK-dummy.m in Sources */,
+				04C56DDF26B186FA006CE1C9 /* WebOSTVServiceConfig.m in Sources */,
+				04F1B74826B0632600C18858 /* ChanelsVCViewController.m in Sources */,
+				04C56DF826B186FA006CE1C9 /* DefaultConnectableDeviceStore.m in Sources */,
+				04C56DDE26B186FA006CE1C9 /* ServiceDescription.m in Sources */,
+				04C56DD726B186FA006CE1C9 /* ExternalInputInfo.m in Sources */,
+				04C56DA826B186FA006CE1C9 /* GCDWebServerRequest.m in Sources */,
+				04C56DCB26B186FA006CE1C9 /* SSDPSocketListener.m in Sources */,
+				04C56DCC26B186FA006CE1C9 /* DeviceServiceReachability.m in Sources */,
+				04F1B74B26B0632600C18858 /* main.m in Sources */,
+				04C56DEF26B186FA006CE1C9 /* WebOSTVServiceMouse.m in Sources */,
+				04F1B75926B0632600C18858 /* TabbarController.m in Sources */,
+				04C56DC126B186FA006CE1C9 /* CTReachability.m in Sources */,
+				04C56DE726B186FA006CE1C9 /* WebOSWebAppSession.m in Sources */,
+				04C56DA426B186FA006CE1C9 /* DiscoveryManager.m in Sources */,
+				04F1B73F26B0632600C18858 /* Intro2ViewController.m in Sources */,
+				04C56DAF26B186FA006CE1C9 /* GCDWebServerDataResponse.m in Sources */,
+				04C56DD626B186FA006CE1C9 /* MediaInfo.m in Sources */,
+				04C56DA226B186FA006CE1C9 /* ZeroConfDiscoveryProvider.m in Sources */,
+				04C56DEC26B186FA006CE1C9 /* ServiceCommand.m in Sources */,
+				04C56DF126B186FA006CE1C9 /* WebOSTVServiceSocketClient.m in Sources */,
+				04C56DC026B186FA006CE1C9 /* CTASINetworkQueue.m in Sources */,
+				04C56DB726B186FA006CE1C9 /* LGSRWebSocket.m in Sources */,
+				04F1B73D26B0632600C18858 /* SplashViewController.m in Sources */,
+				04F1B74C26B0632600C18858 /* Reachability.m in Sources */,
+				04C56DAA26B186FA006CE1C9 /* GCDWebServer.m in Sources */,
+				04C56DA926B186FA006CE1C9 /* GCDWebServerFunctions.m in Sources */,
+				04C56DBD26B186FA006CE1C9 /* CTASIFormDataRequest.m in Sources */,
+				04F1B75726B0632600C18858 /* DetectTVCell.m in Sources */,
+				04F1B73626B0632600C18858 /* ControlTouchpadView.m in Sources */,
+				04F1B73E26B0632600C18858 /* ViewController.m in Sources */,
+				04C56DF326B186FA006CE1C9 /* AirPlayServiceHTTP.m in Sources */,
+				04C56DB126B186FA006CE1C9 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				04C56DC726B186FA006CE1C9 /* TextInputStatusInfo.m in Sources */,
+				04F1B73826B0632600C18858 /* Navigation.m in Sources */,
+				04C56DAD26B186FA006CE1C9 /* GCDWebServerErrorResponse.m in Sources */,
+				04F1B74A26B0632600C18858 /* BaseSubVViewController.m in Sources */,
+				04C56DEA26B186FA006CE1C9 /* ServiceSubscription.m in Sources */,
+				04F1B74D26B0632600C18858 /* AppDelegate.m in Sources */,
+				04C56DA626B186FA006CE1C9 /* CapabilityFilter.m in Sources */,
+				04C56DC926B186FA006CE1C9 /* MediaLaunchObject.m in Sources */,
+				04F1B74F26B0632600C18858 /* ChanelsCollectionViewCell.m in Sources */,
+				04C56DEE26B186FA006CE1C9 /* XMLWriter+ConvenienceMethods.m in Sources */,
+				04C56DF626B186FA006CE1C9 /* DevicePicker.m in Sources */,
+				04C56DE626B186FA006CE1C9 /* LaunchSession.m in Sources */,
+				04F1B74626B0632600C18858 /* SettingsViewController.m in Sources */,
+				04C56DE326B186FA006CE1C9 /* WebOSTVService.m in Sources */,
+				04C56DD326B186FA006CE1C9 /* NSString+Common.m in Sources */,
+				04C56DC826B186FA006CE1C9 /* SubtitleInfo.m in Sources */,
+				04C56DD126B186FA006CE1C9 /* DispatchQueueBlockRunner.m in Sources */,
+				04C56DDD26B186FA006CE1C9 /* NetcastTVServiceConfig.m in Sources */,
+				04C56DE026B186FA006CE1C9 /* AirPlayService.m in Sources */,
+				04C56DCA26B186FA006CE1C9 /* ImageInfo.m in Sources */,
+				04C56DEB26B186FA006CE1C9 /* ServiceAsyncCommand.m in Sources */,
+				04C56DE226B186FA006CE1C9 /* RokuService.m in Sources */,
+				04C56DF026B186FA006CE1C9 /* AirPlayServiceMirrored.m in Sources */,
+				04C56DDA26B186FA006CE1C9 /* ConnectError.m in Sources */,
+				04C56DCD26B186FA006CE1C9 /* NSDictionary+KeyPredicateSearch.m in Sources */,
+				04C56DAE26B186FA006CE1C9 /* GCDWebServerFileResponse.m in Sources */,
+				04C56DB226B186FA006CE1C9 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				04C56DE126B186FA006CE1C9 /* DLNAService.m in Sources */,
+				04C56DF226B186FA006CE1C9 /* NSObject+FeatureNotSupported_Private.m in Sources */,
+				04C56DE526B186FA006CE1C9 /* WebAppSession.m in Sources */,
+				04C56DDB26B186FA006CE1C9 /* CapabilityConstants.m in Sources */,
+				04C56DD826B186FA006CE1C9 /* NSMutableDictionary+NilSafe.m in Sources */,
+				04C56DBC26B186FA006CE1C9 /* CTASIDataCompressor.m in Sources */,
+				04C56DB926B186FA006CE1C9 /* CTASIDownloadCache.m in Sources */,
+				04C56DC626B186FA006CE1C9 /* XMLWriter.m in Sources */,
+				04C56DD226B186FA006CE1C9 /* SubscriptionDeduplicator.m in Sources */,
+				04C56DA726B186FA006CE1C9 /* GCDWebServerResponse.m in Sources */,
+				04C56DA326B186FA006CE1C9 /* SSDPDiscoveryProvider.m in Sources */,
+				04C56DCF26B186FA006CE1C9 /* ChannelInfo.m in Sources */,
+				04C56DBA26B186FA006CE1C9 /* CTASIHTTPRequest.m in Sources */,
+				04C56DD426B186FA006CE1C9 /* ProgramInfo.m in Sources */,
+				04C56DCE26B186FA006CE1C9 /* AppStateChangeNotifier.m in Sources */,
+				04F1B74426B0632600C18858 /* SubBViewController.m in Sources */,
+				04F1B74926B0632600C18858 /* DetectTVViewController.m in Sources */,
+				04C56DD526B186FA006CE1C9 /* ConnectUtil.m in Sources */,
+				04F1B75326B0632600C18858 /* TabbarSubView.m in Sources */,
+				04C56DA526B186FA006CE1C9 /* DiscoveryProvider.m in Sources */,
+				04C56DF426B186FA006CE1C9 /* DLNAHTTPServer.m in Sources */,
+				04C56DC326B186FA006CE1C9 /* CTXMLReader.m in Sources */,
+				04C56DBB26B186FA006CE1C9 /* CTASIInputStream.m in Sources */,
+				04C56DBE26B186FA006CE1C9 /* CTASIAuthenticationDialog.m in Sources */,
+				04C56DE826B186FA006CE1C9 /* AirPlayWebAppSession.m in Sources */,
+				04F1B75426B0632600C18858 /* numboardsubView.m in Sources */,
+				04C56DF526B186FA006CE1C9 /* AirPlayServiceHTTPKeepAlive.m in Sources */,
+				04F1B74326B0632600C18858 /* Intro1ViewController.m in Sources */,
+				04C56DC526B186FA006CE1C9 /* CTGuid.m in Sources */,
+				04C56DBF26B186FA006CE1C9 /* CTASIDataDecompressor.m in Sources */,
+				04F1B74726B0632600C18858 /* SubAViewController.m in Sources */,
+				04C56DB426B186FA006CE1C9 /* GCDWebServerFileRequest.m in Sources */,
+				04C56DD926B186FA006CE1C9 /* AppInfo.m in Sources */,
+				04C56DE926B186FA006CE1C9 /* DIALService.m in Sources */,
+				04C56DF726B186FA006CE1C9 /* ConnectableDevice.m in Sources */,
+				04C56DAB26B186FA006CE1C9 /* GCDWebServerConnection.m in Sources */,
+				04C56DE426B186FA006CE1C9 /* DeviceService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04F1B6F026B0632600C18858 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F1B6F126B0632600C18858 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04F1B6F226B0632600C18858 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F1B6F326B0632600C18858 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044B5611265BA1290074C42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "TV Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		044B5612265BA1290074C42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "TV Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044B5614265BA1290074C42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90EB76253D607AF5614F35D /* Pods-TV Remote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR4J2GH38;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnostics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransport\"",
+					"\"${PODS_ROOT}/Headers/Public/PromisesObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/leveldb-library\"",
+					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Analytics/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
+				INFOPLIST_FILE = "TV Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GoogleUtilities\"",
+					"-l\"PromisesObjC\"",
+					"-l\"c++\"",
+					"-l\"nanopb\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Second-PhoneNumber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		044B5615265BA1290074C42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7ED9ECD2B1E7042942E8ED6 /* Pods-TV Remote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR4J2GH38;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnostics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransport\"",
+					"\"${PODS_ROOT}/Headers/Public/PromisesObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/leveldb-library\"",
+					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Analytics/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
+				INFOPLIST_FILE = "TV Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GoogleUtilities\"",
+					"-l\"PromisesObjC\"",
+					"-l\"c++\"",
+					"-l\"nanopb\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Second-PhoneNumber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044B55F5265BA1260074C42E /* Build configuration list for PBXProject "TV Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044B5611265BA1290074C42E /* Debug */,
+				044B5612265BA1290074C42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044B5613265BA1290074C42E /* Build configuration list for PBXNativeTarget "TV Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044B5614265BA1290074C42E /* Debug */,
+				044B5615265BA1290074C42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044B55F2265BA1260074C42E /* Project object */;
+}
